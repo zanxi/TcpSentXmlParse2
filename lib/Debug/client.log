@@ -1,0 +1,5 @@
+﻿cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  client.cpp
+C:\_2022___\_Rabota__HH__Source\client - server\client\client.cpp(41,27): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\_2022___\_Rabota__HH__Source\client - server\client\client.cpp(76,2): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+  client.vcxproj -> C:\_2022___\_Rabota__HH__Source\client - server\client\Debug\client.exe

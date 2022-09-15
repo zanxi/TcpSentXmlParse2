@@ -1,1 +1,9 @@
-﻿
+﻿  BaseWin.cpp
+  ChildWindow.cpp
+  MainWindow.cpp
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\WindowsProjectDesktop\MainWindow.cpp(246,9): warning C4101: wmId: неиспользованная локальная переменная
+  WindowsProjectDesktop.cpp
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\WindowsProjectDesktop\WindowsProjectDesktop.cpp(166,15): warning C4101: wmEvent: неиспользованная локальная переменная
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\WindowsProjectDesktop\WindowsProjectDesktop.cpp(166,9): warning C4101: wmId: неиспользованная локальная переменная
+  Создание кода...
+  WindowsProjectDesktop.vcxproj -> C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\WindowsProjectDesktop.exe

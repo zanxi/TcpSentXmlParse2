@@ -89,9 +89,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ASock.cpp" />
-    <ClCompile Include="async_server.cpp" />
-    <ClCompile Include="echo_server.cpp" />
-    <ClCompile Include="server.cpp" />
+    <ClCompile Include="async_server_tcp.cpp" />
+    <ClCompile Include="echo_server_udp.cpp" />
+    <ClCompile Include="server_tcp.cpp" />
     <ClCompile Include="SqlServer.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

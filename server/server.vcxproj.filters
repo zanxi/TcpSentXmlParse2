@@ -21,7 +21,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="server.cpp">
+    <ClCompile Include="server_tcp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
@@ -42,10 +42,10 @@
     <ClCompile Include="ASock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="echo_server.cpp">
+    <ClCompile Include="echo_server_udp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="async_server.cpp">
+    <ClCompile Include="async_server_tcp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

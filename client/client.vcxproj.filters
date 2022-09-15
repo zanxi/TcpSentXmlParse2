@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="client.cpp">
+    <ClCompile Include="client_tcp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
@@ -36,7 +36,7 @@
     <ClCompile Include="ASock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="client2.cpp">
+    <ClCompile Include="client_udp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

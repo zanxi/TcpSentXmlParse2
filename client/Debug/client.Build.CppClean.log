@@ -1,28 +1,15 @@
-c:\_2022___\_rabota__hh__source\client - server\client\debug\client.pch
-c:\_2022___\_rabota__hh__source\client - server\client\debug\vc143.pdb
-c:\_2022___\_rabota__hh__source\client - server\client\debug\vc143.idb
-c:\_2022___\_rabota__hh__source\client - server\client\debug\stdafx.obj
-c:\_2022___\_rabota__hh__source\client - server\client\debug\asock.obj
-c:\_2022___\_rabota__hh__source\client - server\client\debug\client.obj
-c:\_2022___\_rabota__hh__source\client - server\client\debug\client2.obj
-c:\_2022___\_rabota__hh__source\client - server\client\debug\functions.obj
-c:\_2022___\_rabota__hh__source\client - server\client\debug\pugixml.obj
-c:\_2022___\_rabota__hh__source\client - server\client\debug\xmlparser.obj
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client.pch
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\vc143.pdb
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\vc143.idb
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\stdafx.obj
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\asock.obj
-c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client.obj
-c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client2.obj
+c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client_tcp.obj
+c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client_udp.obj
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\functions.obj
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\pugixml.obj
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\xmlparser.obj
-c:\_2022___\_rabota__hh__source\client - server\client\debug\client.ilk
-c:\_2022___\_rabota__hh__source\client - server\client\debug\client.exe
-c:\_2022___\_rabota__hh__source\client - server\client\debug\client.pdb
-c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client.exe
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client.ilk
+c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client.exe
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client.pdb
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client.tlog\cl.command.1.tlog
 c:\_2022___\_rabota__hh__source__my\tcpsentxmlparse2\client\debug\client.tlog\cl.read.1.tlog

@@ -1,2 +1,1 @@
 C:\_2022___\_Rabota__HH__Source\client - server\client\Debug\client.exe
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\client\Debug\client.exe

@@ -1,6 +1,3 @@
 C:\_2022___\_Rabota__HH__Source\client - server\WindowsProjectDesktop\x64\Debug\WindowsProjectDesktop.vcxproj.MdMergeInputs.cache
 C:\_2022___\_Rabota__HH__Source\client - server\WindowsProjectDesktop\x64\Debug\WindowsProjectDesktop.vcxproj.cppwinrt_plat.cache
 C:\_2022___\_Rabota__HH__Source\client - server\WindowsProjectDesktop\x64\Debug\WindowsProjectDesktop.vcxproj.cppwinrt_comp.cache
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\WindowsProjectDesktop\x64\Debug\WindowsProjectDesktop.vcxproj.MdMergeInputs.cache
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\WindowsProjectDesktop\x64\Debug\WindowsProjectDesktop.vcxproj.cppwinrt_plat.cache
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\WindowsProjectDesktop\x64\Debug\WindowsProjectDesktop.vcxproj.cppwinrt_comp.cache

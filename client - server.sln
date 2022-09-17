@@ -10,6 +10,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib", "lib\lib.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsProjectDesktop", "WindowsProjectDesktop\WindowsProjectDesktop.vcxproj", "{75585F74-7F7C-480B-9D36-212818C283BD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApplicationRealTime", "MFCApplicationRealTime\MFCApplicationRealTime.vcxproj", "{8C960229-C52F-4566-BA97-BECF7BB4CA01}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApplicationTabListCtrl", "MFCApplicationTabListCtrl\MFCApplicationTabListCtrl.vcxproj", "{E98EFD02-5E62-4742-B923-66E404C45353}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -50,6 +54,22 @@ Global
 		{75585F74-7F7C-480B-9D36-212818C283BD}.Release|x64.Build.0 = Release|x64
 		{75585F74-7F7C-480B-9D36-212818C283BD}.Release|x86.ActiveCfg = Release|Win32
 		{75585F74-7F7C-480B-9D36-212818C283BD}.Release|x86.Build.0 = Release|Win32
+		{8C960229-C52F-4566-BA97-BECF7BB4CA01}.Debug|x64.ActiveCfg = Debug|x64
+		{8C960229-C52F-4566-BA97-BECF7BB4CA01}.Debug|x64.Build.0 = Debug|x64
+		{8C960229-C52F-4566-BA97-BECF7BB4CA01}.Debug|x86.ActiveCfg = Debug|Win32
+		{8C960229-C52F-4566-BA97-BECF7BB4CA01}.Debug|x86.Build.0 = Debug|Win32
+		{8C960229-C52F-4566-BA97-BECF7BB4CA01}.Release|x64.ActiveCfg = Release|x64
+		{8C960229-C52F-4566-BA97-BECF7BB4CA01}.Release|x64.Build.0 = Release|x64
+		{8C960229-C52F-4566-BA97-BECF7BB4CA01}.Release|x86.ActiveCfg = Release|Win32
+		{8C960229-C52F-4566-BA97-BECF7BB4CA01}.Release|x86.Build.0 = Release|Win32
+		{E98EFD02-5E62-4742-B923-66E404C45353}.Debug|x64.ActiveCfg = Debug|x64
+		{E98EFD02-5E62-4742-B923-66E404C45353}.Debug|x64.Build.0 = Debug|x64
+		{E98EFD02-5E62-4742-B923-66E404C45353}.Debug|x86.ActiveCfg = Debug|Win32
+		{E98EFD02-5E62-4742-B923-66E404C45353}.Debug|x86.Build.0 = Debug|Win32
+		{E98EFD02-5E62-4742-B923-66E404C45353}.Release|x64.ActiveCfg = Release|x64
+		{E98EFD02-5E62-4742-B923-66E404C45353}.Release|x64.Build.0 = Release|x64
+		{E98EFD02-5E62-4742-B923-66E404C45353}.Release|x86.ActiveCfg = Release|Win32
+		{E98EFD02-5E62-4742-B923-66E404C45353}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

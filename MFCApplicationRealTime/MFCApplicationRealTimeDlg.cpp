@@ -102,8 +102,8 @@ BOOL CMFCApplicationRealTimeDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Мелкий значок
 
 	// TODO: добавьте дополнительную инициализацию
-	m_tabMyTabCtrl.InsertItem(0, _T("Tab One"));
-	m_tabMyTabCtrl.InsertItem(1, _T("Tab Two"));
+	m_tabMyTabCtrl.InsertItem(0, _T("System Process"));
+	m_tabMyTabCtrl.InsertItem(1, _T("Real time graphic"));
 
 	m_tabMyTabCtrl.Init();
 

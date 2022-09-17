@@ -1,1 +1,14 @@
-﻿
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (client.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  stdafx.cpp
+cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  pugixml.cpp
+  XmlParser.cpp
+  Functions.cpp
+  example.cpp
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\lib\example.cpp(91,2): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+  Создание кода...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\lib\Debug\lib.exe) не соответствует значению свойства выходного файла (C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\lib\Debug\client.exe) для Linker. Это может привести к неправильной сборке проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(lib) не соответствует значению свойства выходного файла (client) для Linker. Это может привести к неправильной сборке проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+example.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/SAFESEH"
+  lib.vcxproj -> C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\lib\Debug\lib.exe

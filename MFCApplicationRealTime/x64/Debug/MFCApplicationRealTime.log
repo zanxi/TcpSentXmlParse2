@@ -1,1 +1,7 @@
-﻿
+﻿  CTabTwo.cpp
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(62,14): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(63,14): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(69,17): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(70,17): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(147,21): warning C4244: =: преобразование "UINT_PTR" в "int", возможна потеря данных
+  MFCApplicationRealTime.vcxproj -> C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe

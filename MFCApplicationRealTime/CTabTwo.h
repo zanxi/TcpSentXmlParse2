@@ -45,6 +45,8 @@ public:
 private:
 	//CStatic* MyStatic;
 	HBRUSH m_brush;
+	HBRUSH m_BrushBlack;
+	
 	TColorText* MyStatic;
 	CButton* MyButton;
 	CEdit* MyEdit;
@@ -67,7 +69,6 @@ protected:
 	// Generated message map functions	
 	virtual BOOL OnInitDialog();
 
-public:
 	afx_msg void MenuExit();
 	afx_msg void MenuStart();
 	afx_msg void MenuStop();
@@ -77,6 +78,11 @@ public:
 	afx_msg void OnKeyDown(UINT, UINT, UINT);
 	afx_msg void OnMouseMove(UINT, CPoint cp);
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+
+	void PaintGraphCoordSystem();
+	void PaintGraph();
+	double x, y, xstep, ystep;
+	double xmin, xmax, ymin, ymax;
 
 
 // Данные диалогового окна

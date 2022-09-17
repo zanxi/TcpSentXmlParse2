@@ -26,6 +26,106 @@ BEGIN_MESSAGE_MAP(CTabTwo, CDialog)
 	ON_WM_KEYDOWN()
 END_MESSAGE_MAP()
 
+void CTabTwo::PaintGraphCoordSystem()
+{	
+		CPaintDC dc(this); // device context for painting
+		CRect rect;
+		dc.SetPolyFillMode(WINDING);
+
+		//m_brush = CreateSolidBrush(RGB(0, 255, 0));
+		//COLORREF crColor = 16777215;// = CreateColo(RGB(0, 255, 0));;
+		
+		COLORREF crColor = RGB(0, 155, 0);// = CreateColo(RGB(0, 255, 0));;
+		CBrush brushBlack(crColor);
+		
+		//	CBrush brushCross(HS_CROSS, RGB(0, 0, 0));
+		
+		GetClientRect(rect);
+
+		//dc.FillRect(&rect, &brushBlack);
+
+		//	dc.SelectObject(&brushCross);
+		//	dc.Rectangle(rect);
+
+			//------------------------------
+			// draw grid in green color
+			//------------------------------
+		
+		int H = rect.Height();
+		int W = rect.Width();
+		CPen GreenPen(PS_DOT, 1, RGB(0, 0, 0));
+		dc.SelectObject(&GreenPen);
+
+		xstep = W / 10;
+		for (x = 0; x < W; x += xstep)
+		{
+			dc.MoveTo(x, 0);
+			dc.LineTo(x, H);
+		}
+
+		ystep = H / 10;
+		for (y = 0; y < H; y += ystep)
+		{
+			dc.MoveTo(0, y);
+			dc.LineTo(W, y);
+		}
+
+		m_BrushBlack = CreateSolidBrush(RGB(255, 0, 0));
+
+		dc.SelectObject(&m_BrushBlack);
+}
+
+void CTabTwo::PaintGraph()
+{
+	CPaintDC dc(this); // device context for painting
+
+	CRect rect;
+
+	dc.SetPolyFillMode(WINDING);
+
+	//m_brush = CreateSolidBrush(RGB(0, 255, 0));
+	//COLORREF crColor = 16777215;// = CreateColo(RGB(0, 255, 0));;
+	//COLORREF crColor = RGB(255, 0, 255);// = CreateColo(RGB(0, 255, 0));;
+	//CBrush brushBlack(crColor);
+	//	CBrush brushCross(HS_CROSS, RGB(0, 0, 0));
+	GetClientRect(rect);
+
+	//dc.FillRect(&rect, &brushBlack);
+
+	//	dc.SelectObject(&brushCross);
+	//	dc.Rectangle(rect);
+
+		//------------------------------
+		// draw grid in green color
+		//------------------------------
+	
+	int H = rect.Height();
+	int W = rect.Width();
+	
+	CPen GreenPen(PS_DOT, 3, RGB(155, 0, 155));
+	dc.SelectObject(&GreenPen);
+
+	xstep = (xmax-xmin)/100;
+	//ystep = (ymax - ymin) / 100;
+	x = xmin;
+	y = ymin;
+	int xc = 50;
+	int yc = 50;
+	dc.MoveTo(xc,yc);
+	for (x = xmin; x < W; x += xstep)
+	{
+		x += xstep;
+		y = 2*sin(x)+3*cos(x) + 4 * sin(2*x);
+		xc = 50 + int(((x - xmin)/ (xmax - xmin*1.0)) * (W-150)*1.0) + 1;
+		yc = 50+ int((y - ymin) / (ymax - ymin) *(H-150)) + 1;
+				
+		dc.LineTo(xc, yc);
+	}
+
+	dc.SelectObject(&m_BrushBlack);
+
+}
+
 
 BOOL CTabTwo::OnInitDialog()
 {
@@ -39,7 +139,12 @@ BOOL CTabTwo::OnInitDialog()
 	// TODO: Add extra initialization here
 
 	BOOL bRet = CDialog::OnInitDialog();
-	m_nTimer = SetTimer(1, 1, NULL);
+	PaintGraphCoordSystem();
+	xmin = 0;
+	xmax = 4*355.0 / 113.0;
+	ymin = -10;
+	ymax = 10;
+	m_nTimer = SetTimer(1, 10, NULL);	
 	return bRet;
 
 	//return TRUE;  // return TRUE  unless you set the focus to a control
@@ -131,9 +236,12 @@ void CTabTwo::MenuStop()
 
 void CTabTwo::OnTimer(UINT_PTR nIDEvent)
 {
+	
+
 	//return;
 	CRect rectClient;
 	GetClientRect(&rectClient);
+	InvalidateRect(&rectClient);
 	//rectClient.bottom -= 10;
 	//rectClient.left += 10;
 	if (newPlace.right > rectClient.right || newPlace.left < rectClient.left) sgn_x = -sgn_x;
@@ -144,6 +252,9 @@ void CTabTwo::OnTimer(UINT_PTR nIDEvent)
 	newPlace.top += sgn_y * VY;
 	newPlace.bottom += sgn_y * VY;
 
+	xmin += 0.2;
+	xmax += 0.2;
+
 	/*newPlace.left += sgn_x * VX;
 	newPlace.right += sgn_x * VX;
 	newPlace.top += sgn_y * VY;
@@ -153,13 +264,14 @@ void CTabTwo::OnTimer(UINT_PTR nIDEvent)
 	//int yc = int((y_next - ymin) / (ymax - ymin) * rectClient.bottom) + 1;
 
 	//InvalidateRect(oldPlace);
-	InvalidateRect(newPlace);
-	oldPlace = newPlace;
+	//InvalidateRect(newPlace);
+	//oldPlace = newPlace;
 }
 
 
 CTabTwo::~CTabTwo()
 {
+	//KillTimer(1);
 	if (MyStatic != NULL)delete MyStatic;
 	if (MyButton != NULL)delete MyButton;
 	if (MyEdit != NULL)delete MyEdit;
@@ -178,12 +290,13 @@ int CTabTwo::OnCreate(LPCREATESTRUCT lpCreateStruct)
 }
 
 void CTabTwo::OnPaint()
-{
-	//return;
+{	
+	PaintGraph();
+	return;
 	CPaintDC dc(this);
 	CBrush bBrush(RGB(0, 0, 255));
 	dc.SelectObject(&bBrush);
-	dc.Ellipse(newPlace);
+	//dc.Ellipse(newPlace);
 }
 
 void CTabTwo::OnKeyDown(UINT nChar, UINT, UINT)

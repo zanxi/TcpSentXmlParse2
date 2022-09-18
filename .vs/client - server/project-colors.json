@@ -35,7 +35,12 @@
       "ProjectGuid": "e98efd02-5e62-4742-b923-66e404c45353",
       "DisplayName": "MFCApplicationTabListCtrl",
       "ColorIndex": 5
+    },
+    "8d24ea28-9efd-48fb-976d-2de3258cc294": {
+      "ProjectGuid": "8d24ea28-9efd-48fb-976d-2de3258cc294",
+      "DisplayName": "ServerSocket",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

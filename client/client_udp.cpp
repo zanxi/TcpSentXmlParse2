@@ -27,7 +27,7 @@ bool EchoClient:: OnRecvedCompleteData(asock::Context* context_ptr,char* data_pt
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-int main(int argc, char* argv[])
+int main2(int argc, char* argv[])
 {
     EchoClient client;
     //max message length is approximately 1024 bytes...

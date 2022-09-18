@@ -11,7 +11,7 @@ public:
 	CMyTabCtrl();
 	virtual ~CMyTabCtrl();
 
-	CDialog* m_tabPages[2];
+	CDialog* m_tabPages[3];
 	int m_tabCurrent;
 	int m_nNumberOfPages;
 

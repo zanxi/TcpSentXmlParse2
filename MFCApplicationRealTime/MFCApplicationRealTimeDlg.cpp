@@ -104,6 +104,7 @@ BOOL CMFCApplicationRealTimeDlg::OnInitDialog()
 	// TODO: добавьте дополнительную инициализацию
 	m_tabMyTabCtrl.InsertItem(0, _T("System Process"));
 	m_tabMyTabCtrl.InsertItem(1, _T("Real time graphic"));
+	m_tabMyTabCtrl.InsertItem(2, _T("Server Tcp/Udp"));
 
 	m_tabMyTabCtrl.Init();
 

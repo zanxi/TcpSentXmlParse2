@@ -90,7 +90,7 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -198,6 +198,10 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SerialPort.h" />
+    <ClInclude Include="ServerDlg.h" />
+    <ClInclude Include="ServerSocketDlg.h" />
+    <ClInclude Include="SocketComm.h" />
+    <ClInclude Include="SocketManager.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TColorText.h" />
@@ -218,6 +222,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ServerDlg.cpp" />
+    <ClCompile Include="ServerSocketDlg.cpp" />
+    <ClCompile Include="SocketComm.cpp" />
+    <ClCompile Include="SocketManager.cpp" />
     <ClCompile Include="TColorText.cpp" />
   </ItemGroup>
   <ItemGroup>

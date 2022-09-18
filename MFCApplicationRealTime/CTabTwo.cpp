@@ -99,8 +99,8 @@ void CTabTwo::PaintGraph()
 		// draw grid in green color
 		//------------------------------
 	
-	int H = rect.Height();
-	int W = rect.Width();
+	H = rect.Height();
+	W = rect.Width();
 	
 	CPen GreenPen(PS_DOT, 3, RGB(155, 0, 155));
 	dc.SelectObject(&GreenPen);
@@ -109,21 +109,28 @@ void CTabTwo::PaintGraph()
 	//ystep = (ymax - ymin) / 100;
 	x = xmin;
 	y = ymin;
-	int xc = 50;
-	int yc = 50;
+	xc = 50;
+	yc = 50;
+	
+	func_plot_init();
 	dc.MoveTo(xc,yc);
 	for (x = xmin; x < W; x += xstep)
 	{
-		x += xstep;
-		y = 2*sin(x)+3*cos(x) + 4 * sin(2*x);
-		xc = 50 + int(((x - xmin)/ (xmax - xmin*1.0)) * (W-150)*1.0) + 1;
-		yc = 50+ int((y - ymin) / (ymax - ymin) *(H-150)) + 1;
+		func_plot_init();
 				
 		dc.LineTo(xc, yc);
 	}
 
 	dc.SelectObject(&m_BrushBlack);
 
+}
+
+void CTabTwo::func_plot_init()
+{
+	x += xstep;
+	y = 1 * sin(x) + 2 * cos(x) + 2 * sin(2 * x) - 3 * cos(3 * x) + 2 * cos(2 * x) - 2 * cos(1.5 * x);
+	xc = 50 + int(((x - xmin) / (xmax - xmin * 1.0)) * (W - 150) * 1.0) + 1;
+	yc = 50 + int((y - ymin) / (ymax - ymin) * (H - 150)) + 1;
 }
 
 
@@ -144,7 +151,7 @@ BOOL CTabTwo::OnInitDialog()
 	xmax = 4*355.0 / 113.0;
 	ymin = -10;
 	ymax = 10;
-	m_nTimer = SetTimer(1, 10, NULL);	
+	m_nTimer = SetTimer(1, 100, NULL);	
 	return bRet;
 
 	//return TRUE;  // return TRUE  unless you set the focus to a control
@@ -172,7 +179,7 @@ void CTabTwo::OnMouseMove(UINT, CPoint cp)
 CTabTwo::CTabTwo(CWnd* pParent /*=nullptr*/)
 	: CDialog(IDD_TAB_TWO, pParent)
 {
-	m_brush = CreateSolidBrush(RGB(0, 255, 0));
+	m_brush = CreateSolidBrush(RGB(255, 255, 255));
 
 	//Create(NULL, "Users window application", WS_OVERLAPPEDWINDOW, rectDefault, NULL, NULL);
 	MyStatic = new TColorText();	

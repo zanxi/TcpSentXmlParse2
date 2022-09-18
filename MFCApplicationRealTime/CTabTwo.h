@@ -83,6 +83,11 @@ protected:
 	void PaintGraph();
 	double x, y, xstep, ystep;
 	double xmin, xmax, ymin, ymax;
+	int xc = 50;
+	int yc = 50;
+	int H;
+	int W;
+	void func_plot_init();
 
 
 // Данные диалогового окна

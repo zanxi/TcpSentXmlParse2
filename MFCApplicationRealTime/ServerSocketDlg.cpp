@@ -26,6 +26,24 @@ const int SOCK_UDP  = 1;
 CServerSocketDlg::CServerSocketDlg(CWnd* pParent /*=NULL*/)
 	: CDialog(CServerSocketDlg::IDD, pParent)
 {
+
+	WORD	wVersionRequested;
+	WSADATA wsaData;
+	int		err;
+	int		bytesRecv;
+
+
+	//--- INITIALIZATION -----------------------------------
+	wVersionRequested = MAKEWORD(1, 1);
+	err = WSAStartup(wVersionRequested, &wsaData);
+
+	if (err != 0) {
+		printf("WSAStartup error %ld", WSAGetLastError());
+		WSACleanup();
+		return;
+	}
+	//------------------------------------------------------
+
 	//{{AFX_DATA_INIT(CServerSocketDlg)
 	m_strPort = _T("2000");
 	m_nSockType = SOCK_TCP;	// default TCP

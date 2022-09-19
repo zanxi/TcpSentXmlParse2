@@ -191,6 +191,7 @@
     <ClInclude Include="ColoredListCtrl.h" />
     <ClInclude Include="CTabTwo.h" />
     <ClInclude Include="DataStruct.h" />
+    <ClInclude Include="Dynamic3d.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="ListCtrl_Category_GroupsDef.h" />
     <ClInclude Include="MFCApplicationRealTime.h" />
@@ -214,6 +215,7 @@
     <ClCompile Include="CMyTabCtrl.cpp" />
     <ClCompile Include="ColoredListCtrl.cpp" />
     <ClCompile Include="CTabTwo.cpp" />
+    <ClCompile Include="Dynamic3d.cpp" />
     <ClCompile Include="MFCApplicationRealTime.cpp" />
     <ClCompile Include="MFCApplicationRealTimeDlg.cpp" />
     <ClCompile Include="pch.cpp">

@@ -103,9 +103,10 @@ BOOL CMFCApplicationRealTimeDlg::OnInitDialog()
 
 	// TODO: добавьте дополнительную инициализацию
 	m_tabMyTabCtrl.InsertItem(0, _T("System Process"));
-	m_tabMyTabCtrl.InsertItem(1, _T("Real time graphic"));
+	m_tabMyTabCtrl.InsertItem(1, _T("RS-232 Real time graphic"));
 	m_tabMyTabCtrl.InsertItem(2, _T("Server Tcp/Udp"));
 	m_tabMyTabCtrl.InsertItem(3, _T("Client Tcp/Udp"));
+	m_tabMyTabCtrl.InsertItem(4, _T("HyperCube Dynamic 3d"));
 
 	m_tabMyTabCtrl.Init();
 

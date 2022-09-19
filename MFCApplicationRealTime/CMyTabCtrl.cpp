@@ -9,6 +9,7 @@
 #include "CTabTwo.h"
 #include "ServerSocketDlg.h"
 #include "ClientSocketDlg.h"
+#include "Dynamic3d.h"
 
 
 // CMyTabCtrl
@@ -21,7 +22,8 @@ CMyTabCtrl::CMyTabCtrl()
     m_tabPages[1] = new CTabTwo();
     m_tabPages[2] = new CServerSocketDlg();
     m_tabPages[3] = new CClientSocketDlg();
-    m_nNumberOfPages = 4;
+    m_tabPages[4] = new CMy3DGraficaDlg();
+    m_nNumberOfPages = 5;
 
     //Init();
 
@@ -58,11 +60,13 @@ void CMyTabCtrl::Init()
     m_tabPages[1]->Create(IDD_TAB_TWO, this);
     m_tabPages[2]->Create(IDD_TAB_THREE_SERVER, this);
     m_tabPages[3]->Create(IDD_TAB_FOTH_CLIENT, this);
+    m_tabPages[4]->Create(IDD_TAB_FIVE__2d, this);
 
     m_tabPages[0]->ShowWindow(SW_SHOW);
     m_tabPages[1]->ShowWindow(SW_HIDE);
     m_tabPages[2]->ShowWindow(SW_HIDE);
     m_tabPages[3]->ShowWindow(SW_HIDE);
+    m_tabPages[4]->ShowWindow(SW_HIDE);
 
     SetRectangle();
 

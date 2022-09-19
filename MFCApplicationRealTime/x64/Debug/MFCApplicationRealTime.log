@@ -1,3 +1,2 @@
-﻿  ServerSocketDlg.cpp
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\ServerSocketDlg.cpp(330,33): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+﻿  MFCApplicationRealTimeDlg.cpp
   MFCApplicationRealTime.vcxproj -> C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe

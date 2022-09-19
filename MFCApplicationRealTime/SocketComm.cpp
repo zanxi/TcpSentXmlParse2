@@ -582,6 +582,9 @@ bool CSocketComm::CreateSocketEx(LPCTSTR strHost, LPCTSTR strServiceName, int nF
     // nFamily: (AF_INET)
     // nType: (SOCK_STREAM, SOCK_DGRAM)
     SOCKET sock = socket(nFamily, nType, IPPROTO_IP);
+    //int sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    //SOCKET sock = socket(AF_INET, SOCK_RAW, IPPROTO_IP);
+    //SOCKET sock = WSASocket(AF_INET, SOCK_STREAM, IPPROTO_IP, NULL, 0, WSA_FLAG_OVERLAPPED);
     if (INVALID_SOCKET != sock)
     {
         if (uOptions & SO_REUSEADDR)

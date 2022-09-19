@@ -11,6 +11,8 @@
 #define IDD_TAB_TWO                     106
 #define IDD_TAB_THREE_SERVER            107
 #define IDD_TAB_FOTH_CLIENT             108
+#define IDD_OLE_PROPPAGE_LARGE          109
+#define IDD_TAB_FIVE__2d                109
 #define IDR_MAINFRAME                   128
 #define IDC_SVR_PORT                    1000
 #define IDC_SVR_PORTINC                 1001
@@ -30,7 +32,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        134
+#define _APS_NEXT_RESOURCE_VALUE        135
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1007
 #define _APS_NEXT_SYMED_VALUE           104

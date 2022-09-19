@@ -128,7 +128,7 @@ void CTabTwo::PaintGraph()
 void CTabTwo::func_plot_init()
 {
 	x += xstep;
-	y = 1 * sin(x) + 2 * cos(x) + 2 * sin(2 * x) - 3 * cos(3 * x) + 2 * cos(2 * x) - 2 * cos(1.5 * x);
+	y = 1 * sin(x) + 0*(-5+rand() % 10) * cos(x) + 2 * sin(2 * x) - (-2+rand() % 10) * cos(3 * x) + 2 * cos(2 * x) - 2 * cos(1.5 * x);
 	xc = 50 + int(((x - xmin) / (xmax - xmin * 1.0)) * (W - 150) * 1.0) + 1;
 	yc = 50 + int((y - ymin) / (ymax - ymin) * (H - 150)) + 1;
 }

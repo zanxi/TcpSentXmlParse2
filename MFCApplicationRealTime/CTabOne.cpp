@@ -11,6 +11,11 @@
 
 IMPLEMENT_DYNAMIC(CTabOne, CDialog)
 
+BEGIN_MESSAGE_MAP(CTabOne, CDialog)	
+	ON_WM_CTLCOLOR()	
+END_MESSAGE_MAP()
+
+
 CTabOne::CTabOne(CWnd* pParent /*=nullptr*/)
 	: CDialog(IDD_TAB_ONE, pParent)
 {
@@ -19,6 +24,18 @@ CTabOne::CTabOne(CWnd* pParent /*=nullptr*/)
 
 CTabOne::~CTabOne()
 {
+}
+
+HBRUSH CTabOne::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+{
+	//ID_STATICTEXT
+
+	HBRUSH hbr = CDialog::OnCtlColor(pDC, pWnd, nCtlColor);
+
+	// Return handle to our CBrush object
+	//hbr = m_brush;
+
+	return hbr;
 }
 
 void CTabOne::DoDataExchange(CDataExchange* pDX)

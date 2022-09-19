@@ -72,6 +72,7 @@ BEGIN_MESSAGE_MAP(CTabOne2, CDialog)
 	//{{AFX_MSG_MAP(CTabOne2)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_WM_CTLCOLOR()
 //	ON_COMMAND(DELSERVICE, OnDELSERVICE)
 //	ON_COMMAND(IDSTART, OnStart)
 //	ON_COMMAND(IDSTOP, OnStop)
@@ -79,6 +80,18 @@ BEGIN_MESSAGE_MAP(CTabOne2, CDialog)
 	ON_WM_CREATE()
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
+
+HBRUSH CTabOne2::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+{
+	//ID_STATICTEXT
+
+	HBRUSH hbr = CDialog::OnCtlColor(pDC, pWnd, nCtlColor);
+
+	// Return handle to our CBrush object
+	hbr = CreateSolidBrush(RGB(255, 255, 255));	
+
+	return hbr;
+}
 
 /////////////////////////////////////////////////////////////////////////////
 // CTabOne2 message handlers
@@ -103,9 +116,9 @@ BOOL CTabOne2::OnInitDialog()
 
 void CTabOne2::OnPaint()
 {
-	//if (IsIconic())
+	if (IsIconic())
 	
-	if (TRUE)
+	//if (TRUE)
 	{
 		CPaintDC dc(this); // device context for painting
 

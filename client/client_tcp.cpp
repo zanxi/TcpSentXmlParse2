@@ -16,8 +16,8 @@
 #define SERVER_PORT 2000
 #define BUF_SIZE 4096 // block transfer size  
 #define QUEUE_SIZE 10
-//#define IPAddress "127.0.0.1" // Local to the system - Loop back address
-#define IPAddress "192.168.56.1"
+#define IPAddress "127.0.0.1" // Local to the system - Loop back address
+//#define IPAddress "192.168.56.1"
 
 int _tmain(int argc, _TCHAR* argv[])
 {

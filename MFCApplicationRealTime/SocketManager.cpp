@@ -70,17 +70,18 @@ void CSocketManager::AppendMessage(LPCTSTR strText )
 {
 	if (NULL == m_pMsgCtrl)
 		return;
-/*
+
 	if (::IsWindow( m_pMsgCtrl->GetSafeHwnd() ))
 	{
 		int nLen = m_pMsgCtrl->GetWindowTextLength();
 		m_pMsgCtrl->SetSel(nLen, nLen);
 		m_pMsgCtrl->ReplaceSel( strText );
 	}
-*/
+
 	HWND hWnd = m_pMsgCtrl->GetSafeHwnd();
-	DWORD dwResult = 0;
-	/*
+	//DWORD dwResult = 0;
+	DWORD_PTR dwResult = 0;
+	
 	if (SendMessageTimeout(hWnd, WM_GETTEXTLENGTH, 0, 0, SMTO_NORMAL, 1000L, &dwResult) != 0)
 	{
 		int nLen = (int) dwResult;
@@ -92,7 +93,7 @@ void CSocketManager::AppendMessage(LPCTSTR strText )
 		}
 
 	}
-	*/
+	/* */
 }
 
 

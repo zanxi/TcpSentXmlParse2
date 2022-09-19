@@ -46,6 +46,7 @@
 		afx_msg void OnStop();
 		afx_msg void OnRewrite();
 		afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
+		HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 		//}}AFX_MSG
 		DECLARE_MESSAGE_MAP()
 	};

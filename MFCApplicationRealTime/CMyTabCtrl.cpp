@@ -8,6 +8,7 @@
 #include "AppServiceDlg.h"
 #include "CTabTwo.h"
 #include "ServerSocketDlg.h"
+#include "ClientSocketDlg.h"
 
 
 // CMyTabCtrl
@@ -19,7 +20,8 @@ CMyTabCtrl::CMyTabCtrl()
     m_tabPages[0] = new CTabOne2();
     m_tabPages[1] = new CTabTwo();
     m_tabPages[2] = new CServerSocketDlg();
-    m_nNumberOfPages = 3;
+    m_tabPages[3] = new CClientSocketDlg();
+    m_nNumberOfPages = 4;
 
     //Init();
 
@@ -55,10 +57,12 @@ void CMyTabCtrl::Init()
     m_tabPages[0]->Create(IDD_TAB_ONE, this);
     m_tabPages[1]->Create(IDD_TAB_TWO, this);
     m_tabPages[2]->Create(IDD_TAB_THREE_SERVER, this);
+    m_tabPages[3]->Create(IDD_TAB_FOTH_CLIENT, this);
 
     m_tabPages[0]->ShowWindow(SW_SHOW);
     m_tabPages[1]->ShowWindow(SW_HIDE);
     m_tabPages[2]->ShowWindow(SW_HIDE);
+    m_tabPages[3]->ShowWindow(SW_HIDE);
 
     SetRectangle();
 

@@ -19,7 +19,7 @@ public:
 
 // Dialog Data
 	//{{AFX_DATA(CClientSocketDlg)
-	enum { IDD = IDD_CLIENTSOCKET_DIALOG };
+	enum { IDD = IDD_TAB_FOTH_CLIENT };
 	CEdit	m_ctlMessage;
 	CSpinButtonCtrl	m_ctlPortInc;
 	CEdit	m_ctlMsgList;
@@ -50,6 +50,7 @@ protected:
 	afx_msg void OnBtnSend();
 	virtual BOOL OnInitDialog();
 	afx_msg void OnDestroy();
+	HBRUSH  OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };

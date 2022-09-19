@@ -184,6 +184,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AppServiceDlg.h" />
+    <ClInclude Include="ClientSocketDlg.h" />
     <ClInclude Include="CMyButton.h" />
     <ClInclude Include="CMyListCtrl.h" />
     <ClInclude Include="CMyTabCtrl.h" />
@@ -207,6 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppServiceDlg.cpp" />
+    <ClCompile Include="ClientSocketDlg.cpp" />
     <ClCompile Include="CMyButton.cpp" />
     <ClCompile Include="CMyListCtrl.cpp" />
     <ClCompile Include="CMyTabCtrl.cpp" />

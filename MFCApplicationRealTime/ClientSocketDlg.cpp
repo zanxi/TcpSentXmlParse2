@@ -1,9 +1,11 @@
 // ClientSocketDlg.cpp : implementation file
 //
 
+#include "pch.h"
 #include "stdafx.h"
+#include "resource.h"
 #include <atlconv.h>
-#include "ServerSocket.h"
+//#include "ServerSocket.h"
 #include "ClientSocketDlg.h"
 
 #ifdef _DEBUG
@@ -46,12 +48,27 @@ void CClientSocketDlg::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CClientSocketDlg, CDialog)
 	//{{AFX_MSG_MAP(CClientSocketDlg)
+	ON_WM_CTLCOLOR()
 	ON_BN_CLICKED(IDC_BTN_START, OnBtnConnect)
 	ON_BN_CLICKED(IDC_BTN_STOP, OnBtnDisconnect)
 	ON_BN_CLICKED(IDC_BTN_SEND, OnBtnSend)
 	ON_WM_DESTROY()
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
+
+HBRUSH  CClientSocketDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+{
+	//ID_STATICTEXT
+
+	HBRUSH hbr = CDialog::OnCtlColor(pDC, pWnd, nCtlColor);
+
+	// Return handle to our CBrush object
+	hbr = CreateSolidBrush(RGB(255, 255, 255));
+
+	return hbr;
+
+}
+
 
 /////////////////////////////////////////////////////////////////////////////
 // CClientSocketDlg message handlers

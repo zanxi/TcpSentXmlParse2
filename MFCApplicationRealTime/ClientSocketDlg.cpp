@@ -193,7 +193,8 @@ void CClientSocketDlg::OnBtnConnect()
 			m_SockPeer.CreateFrom( strServer, m_strPort, AF_INET);
 		}
 
-		m_ctlMsgList.SetWindowText( strMsg );
+		//m_ctlMsgList.SetWindowText( strMsg );
+		//m_ctlMsgList.SetWindowText(_T("Client sent: ") + strMsg);
 	}
 	
 }
@@ -230,6 +231,10 @@ void CClientSocketDlg::OnBtnSend()
 		USES_CONVERSION;
 		strcpy_s(reinterpret_cast<LPSTR>(byBuffer), 256, T2CA(strText));
 		m_SocketManager.WriteComm( byBuffer, nLen, INFINITE);
+
+		//m_ctlMsgList.SetWindowText(_T("Client sent: ") + strText);
+		//m_ctlMsgList.Text(_T("Client sent: ") + strText);
+		
 	}
 }
 

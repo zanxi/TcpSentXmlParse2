@@ -17,6 +17,7 @@ BEGIN_MESSAGE_MAP(CTabTwo, CDialog)
 	ON_WM_CREATE()
 	ON_WM_MOUSEMOVE()
 	ON_WM_CTLCOLOR()
+	ON_WM_SIZE(OnSize)
 	ON_COMMAND(ID_MOTION_EXIT, MenuExit)
 	ON_COMMAND(ID_MOTION_START, MenuStart)
 	ON_COMMAND(ID_MOTION_STOP, MenuStop)
@@ -28,6 +29,8 @@ END_MESSAGE_MAP()
 
 void CTabTwo::PaintGraphCoordSystem()
 {	
+	
+
 		CPaintDC dc(this); // device context for painting
 		CRect rect;
 		dc.SetPolyFillMode(WINDING);
@@ -157,6 +160,31 @@ BOOL CTabTwo::OnInitDialog()
 	//return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
+void CTabTwo::SetPosContr()
+{
+	/*************
+	   //poss my wind.. //no eto netochno posmotri GetDeskTopWindow()
+	  CRect rectDeskTop;
+	  GetDesktopWindow(&rectDeskTop);
+	  this->MoveWindow();
+	***************/
+	CRect rect;
+	GetClientRect(&rect);
+	int x = rect.Width() / 2;
+	int y = rect.Height() / 2;
+	MoveWindow(10, 10, rect.Width(), rect.Height());
+	InvalidateRect(&rect);
+}
+
+void CTabTwo::OnSize(UINT nType, int cx, int cy)
+{
+	CDialog::OnSize(nType, cx, cy);
+
+	//if (GetSafeHwnd() != 0)      
+		//SetPosContr();
+}
+
+
 
 void CTabTwo::DoDataExchange(CDataExchange* pDX)
 {
@@ -243,8 +271,6 @@ void CTabTwo::MenuStop()
 
 void CTabTwo::OnTimer(UINT_PTR nIDEvent)
 {
-	
-
 	//return;
 	CRect rectClient;
 	GetClientRect(&rectClient);

@@ -61,8 +61,8 @@ void CSocketManager::DisplayData(const LPBYTE lpData, DWORD dwCount, const SockA
 
 		strData = strAddr + strData;
 	}
-
-	AppendMessage( strData );
+	//m_pCurServer->AppendMessage(_T("Server: "));
+	AppendMessage(_T("Receive: \n")+ strData );
 }
 
 
@@ -87,7 +87,7 @@ void CSocketManager::AppendMessage(LPCTSTR strText )
 		int nLen = (int) dwResult;
 		if (SendMessageTimeout(hWnd, EM_SETSEL, nLen, nLen, SMTO_NORMAL, 1000L, &dwResult) != 0)
 		{
-			if (SendMessageTimeout(hWnd, EM_REPLACESEL, FALSE, (LPARAM)strText, SMTO_NORMAL, 1000L, &dwResult) != 0)
+			//if (SendMessageTimeout(hWnd, EM_REPLACESEL, FALSE, (LPARAM)strText, SMTO_NORMAL, 1000L, &dwResult) != 0)
 			{
 			}
 		}

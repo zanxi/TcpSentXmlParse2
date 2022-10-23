@@ -73,6 +73,12 @@ BOOL CMFCApplicationRealTimeApp::InitInstance()
 
 	CMFCApplicationRealTimeDlg dlg;
 	m_pMainWnd = &dlg;
+
+	//CWnd* pCtrl = GetDlgItem(IDC_CONTROL1);
+	// keep it centered
+	
+
+
 	INT_PTR nResponse = dlg.DoModal();
 	if (nResponse == IDOK)
 	{

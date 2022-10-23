@@ -35,6 +35,8 @@
 		afx_msg void OnContextMenu(CWnd*, CPoint point);
 		HICON m_hIcon;
 
+		CRect rctrl;
+
 		// Generated message map functions
 		//{{AFX_MSG(CTabOne2)
 		virtual BOOL OnInitDialog();
@@ -45,6 +47,7 @@
 		afx_msg void OnStart();
 		afx_msg void OnStop();
 		afx_msg void OnRewrite();
+		afx_msg void OnSize(UINT nType, int cx, int cy);
 		afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 		HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 		//}}AFX_MSG

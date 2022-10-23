@@ -49,8 +49,9 @@ END_MESSAGE_MAP()
 
 
 
-void CMyTabCtrl::Init()
+void CMyTabCtrl::Init(CRect MainRect)
 {
+    
     
     m_tabCurrent = 0;
 
@@ -68,29 +69,48 @@ void CMyTabCtrl::Init()
     m_tabPages[3]->ShowWindow(SW_HIDE);
     m_tabPages[4]->ShowWindow(SW_HIDE);
 
-    SetRectangle();
+    SetRectangle(MainRect);
 
 }
 
 
-int CMyTabCtrl::SetRectangle()
+int CMyTabCtrl::SetRectangle(CRect tabRect)
 {
-    CRect tabRect, itemRect;
+    CRect //tabRect
+        itemRect;
     int nX, nY, nXc, nYc;
 
-    GetClientRect(&tabRect);
+    //GetClientRect(&tabRect);
     GetItemRect(0, &itemRect);
 
     nX = itemRect.left;
     nY = itemRect.bottom + 1;
-    nXc = tabRect.right - itemRect.left - 1;
-    nYc = tabRect.bottom-nY-1;
+    nXc = tabRect.right;// - itemRect.left - 1;
+    nYc = tabRect.bottom;// -nY - 1;
 
-    m_tabPages[0]->SetWindowPos(&wndTop, nX, nY, nXc, nYc, SWP_SHOWWINDOW);
+    m_tabPages[0]->SetWindowPos(&wndTop, 
+        nX, nY,
+        tabRect.Width(), tabRect.Height(),
+        //nX, nY, nXc, nYc, 
+        SWP_SHOWWINDOW);
+    //m_tabPages[1]->ShowWindow(SW_SHOW);
     for (int nCount = 1; nCount < m_nNumberOfPages; nCount++)
     {
-         m_tabPages[nCount] -> SetWindowPos(&wndTop, nX, nY, nXc, nYc, SWP_HIDEWINDOW);
+         m_tabPages[nCount] -> 
+             SetWindowPos(&wndTop, 
+                 //nX, nY, nXc, nYc, 
+                 nX,nY,
+                 tabRect.Width(), tabRect.Height(),
+                 SWP_HIDEWINDOW);
+         //if(nCount!=1)m_tabPages[nCount]->ShowWindow(SW_HIDE);
+         //m_tabPages[nCount]->MoveWindow(1, 1, tabRect.Width(), tabRect.Height());
+         //CRect rectCtrl;
+          //pCtrl->GetWindowRect(rectCtrl);
+         //MoveWindow(rectCtrl.left, rectCtrl.top, rectCtrl.Width(), rectCtrl.Height());
     }
+
+    //m_tabPages[1]->MoveWindow(1, 1, tabRect.Width()*2, tabRect.Height()*2);
+    MoveWindow(nX, nY, tabRect.Width(), tabRect.Height());
 
     //(CTabOne2)m_tabPages[0]
 

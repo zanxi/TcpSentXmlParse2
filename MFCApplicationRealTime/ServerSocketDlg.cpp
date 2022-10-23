@@ -163,6 +163,7 @@ bool CServerSocketDlg::StartServer()
 			strServer.ReleaseBuffer();
 			m_pCurServer->GetLocalAddress( strAddr.GetBuffer(256), 256);
 			strAddr.ReleaseBuffer();
+			
 			CString strMsg = _T("Server: ") + strServer;
 					strMsg += _T(", @Address: ") + strAddr;
 					strMsg += _T(" is running on port ") + m_strPort + CString("\r\n");
@@ -351,6 +352,7 @@ void CServerSocketDlg::OnBtnSend()
 		{
 			nLen = __min(sizeof(msgProxy.byData)-1, nLen+1);
 			memcpy(msgProxy.byData, T2CA(strText), nLen);
+			m_pCurServer->AppendMessage(_T("Server sent: ")+ strText);
 		}
 
 		// Send data to peer...

@@ -68,7 +68,10 @@ protected:
 
 	// Generated message map functions	
 	virtual BOOL OnInitDialog();
+	
+	void SetPosContr();
 
+	afx_msg void OnSize(UINT nType, int cx, int cy);
 	afx_msg void MenuExit();
 	afx_msg void MenuStart();
 	afx_msg void MenuStop();

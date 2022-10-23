@@ -18,8 +18,8 @@ public:
 protected:
 	DECLARE_MESSAGE_MAP()
 public:
-	void Init();
-	int SetRectangle();
+	void Init(CRect MainRect);
+	int SetRectangle(CRect MainRect);
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 	afx_msg void OnPaint();
 };

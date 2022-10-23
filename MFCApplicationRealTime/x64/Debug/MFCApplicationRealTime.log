@@ -1,19 +1,8 @@
-﻿  SocketComm.cpp
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(305,13): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(310,26): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(337,18): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(339,17): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(384,18): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(395,17): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(469,38): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(489,38): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(617,12): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(691,12): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(701,12): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(846,24): warning C4244: аргумент: преобразование "SOCKET" в "int", возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(853,39): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(878,41): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(936,24): warning C4244: аргумент: преобразование "SOCKET" в "int", возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(961,93): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\SocketComm.cpp(975,112): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+﻿  CTabTwo.cpp
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(20,2): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "ON_WM_SIZE"
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(65,14): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(66,14): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(72,17): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(73,17): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(157,21): warning C4244: =: преобразование "UINT_PTR" в "int", возможна потеря данных
   MFCApplicationRealTime.vcxproj -> C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe

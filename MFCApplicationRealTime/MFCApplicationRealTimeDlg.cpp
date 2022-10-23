@@ -108,7 +108,29 @@ BOOL CMFCApplicationRealTimeDlg::OnInitDialog()
 	m_tabMyTabCtrl.InsertItem(3, _T("Client Tcp/Udp"));
 	m_tabMyTabCtrl.InsertItem(4, _T("HyperCube Dynamic 3d"));
 
-	m_tabMyTabCtrl.Init();
+	
+
+
+	//*************************************
+
+	//CWnd* pCtrl = GetDlgItem(IDC_CONTROL1);
+	//// keep it centered
+	//CRect rectCtrl;
+	//pCtrl->GetWindowRect(rectCtrl);
+	//MoveWindow(rectCtrl.left, rectCtrl.top, rectCtrl.Width(), rectCtrl.Height());
+
+	CRect rectCtrl;
+	SystemParametersInfo(SPI_GETWORKAREA, 0, &rectCtrl, 0);
+	//dlg.GetWindowRect(rectCtrl);
+	MoveWindow(rectCtrl.left, rectCtrl.top, rectCtrl.Width(), rectCtrl.Height());
+	//SetWindowPos(this,
+	//	1, 1,
+	//	(rectCtrl.right), (rectCtrl.bottom),		
+	//	//(rectCtrl.Width()) / 2, (rectCtrl.Height()) / 2,
+	//	SWP_NOSIZE | SWP_NOZORDER);
+	//*************************************
+
+	m_tabMyTabCtrl.Init(rectCtrl);
 
 	return TRUE;  // возврат значения TRUE, если фокус не передан элементу управления
 }

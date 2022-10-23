@@ -3,4 +3,9 @@
   <PropertyGroup>
     <RESOURCE_FILE>MFCApplicationRealTime.rc</RESOURCE_FILE>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerEnvironment>PATH=$(OPENCV_DIR)\x64\vc14\bin;%PATH%
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>

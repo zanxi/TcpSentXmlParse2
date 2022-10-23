@@ -73,6 +73,7 @@ BEGIN_MESSAGE_MAP(CTabOne2, CDialog)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_WM_CTLCOLOR()
+	ON_WM_SIZE(OnSize)
 //	ON_COMMAND(DELSERVICE, OnDELSERVICE)
 //	ON_COMMAND(IDSTART, OnStart)
 //	ON_COMMAND(IDSTOP, OnStop)
@@ -80,6 +81,15 @@ BEGIN_MESSAGE_MAP(CTabOne2, CDialog)
 	ON_WM_CREATE()
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
+
+void CTabOne2::OnSize(UINT nType, int cx, int cy)
+{
+	CDialog::OnSize(nType, cx, cy);
+
+	//if (GetSafeHwnd() != 0)      
+		//SetPosContr();
+}
+
 
 HBRUSH CTabOne2::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 {
@@ -106,6 +116,13 @@ BOOL CTabOne2::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
 	// TODO: Add extra initialization here
+
+
+	//CWnd* pCtrl = GetDlgItem(IDD_MFCAPPLICATIONREALTIME_DIALOG);
+	////// keep it centered
+	//CRect rectCtrl;
+	//pCtrl->GetWindowRect(rectCtrl);
+	//MoveWindow(rectCtrl.left, rectCtrl.top, rectCtrl.Width(), rectCtrl.Height());
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }

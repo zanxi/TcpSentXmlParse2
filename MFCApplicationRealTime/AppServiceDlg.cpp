@@ -198,6 +198,11 @@ BOOL CTabOne2::CListCtrlFill()
 
 	m_List.DeleteAllItems();
 
+
+	CRect rectCtrl;
+	SystemParametersInfo(SPI_GETWORKAREA, 0, &rectCtrl, 0);
+	m_List.MoveWindow(10,10, (int)(rectCtrl.Width()/1.1), rectCtrl.Height());
+
 	CString csText;
 
 	hSCM = OpenSCManager(NULL, NULL, SC_MANAGER_ALL_ACCESS);

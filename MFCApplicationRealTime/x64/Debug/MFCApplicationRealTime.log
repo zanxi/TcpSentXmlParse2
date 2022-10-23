@@ -1,8 +1,2 @@
-﻿  CTabTwo.cpp
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(20,2): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "ON_WM_SIZE"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(65,14): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(66,14): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(72,17): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(73,17): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\CTabTwo.cpp(157,21): warning C4244: =: преобразование "UINT_PTR" в "int", возможна потеря данных
+﻿  CMyTabCtrl.cpp
   MFCApplicationRealTime.vcxproj -> C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe

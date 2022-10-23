@@ -132,6 +132,11 @@ void CMyTabCtrl::OnLButtonDown(UINT nFlags, CPoint point)
 
         m_tabPages[m_tabCurrent]->ShowWindow(SW_SHOW);
         m_tabPages[m_tabCurrent]->SetFocus();
+        if (m_tabCurrent == 0)
+        {
+            ((CTabOne2*)m_tabPages[0])->m_List.Invalidate();
+            ((CTabOne2*)m_tabPages[0])->m_List.UpdateWindow();
+        }
     }
 
 }
@@ -142,6 +147,13 @@ void CMyTabCtrl::OnPaint()
     CTabCtrl::OnPaint();
     //CClientDC dc(this);
     if (m_tabPages == NULL)return;
+
+    CRect rectCtrl;
+    SystemParametersInfo(SPI_GETWORKAREA, 0, &rectCtrl, 0);
+    
+    //((CTabOne2*)m_tabPages[0])->m_List.MoveWindow(10, 10, (int)(rectCtrl.Width() / 1.1), rectCtrl.Height());
+    ((CTabOne2*)m_tabPages[0])->m_List.Invalidate();
+    ((CTabOne2*)m_tabPages[0])->m_List.UpdateWindow();
     m_tabPages[0]->Invalidate();
     m_tabPages[0]->UpdateWindow();
 }

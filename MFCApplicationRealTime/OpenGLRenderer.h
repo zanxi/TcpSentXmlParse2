@@ -2,7 +2,8 @@
 
 #include "stdafx.h"
 #pragma comment(lib, "opengl32.lib")
-#pragma comment(lib, "glew32.lib") //make sure project settings have: Linker -> Additional Library Directories -> include path for library.
+#pragma comment(lib, "glew32.lib") 
+//make sure project settings have: Linker -> Additional Library Directories -> include path for library.
 #include "glew.h"
 #include "wglew.h"
 

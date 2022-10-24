@@ -8,19 +8,5 @@ OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный
 OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glFlush в функции "public: void __cdecl OpenGLRenderer::DrawScene(void)" (?DrawScene@OpenGLRenderer@@QEAAXXZ).
 OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glGetString в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
 OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glViewport в функции "public: void __cdecl OpenGLRenderer::OnSize(unsigned int,int,int)" (?OnSize@OpenGLRenderer@@QEAAXIHH@Z).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glewInit в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_wglewIsSupported в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewBindBuffer в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewBufferData в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewDeleteBuffers в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewGenBuffers в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewEnableVertexAttribArray в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewVertexAttribPointer в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewBindVertexArray в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewDeleteVertexArrays в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewGenVertexArrays в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glewExperimental в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___wglewCreateContextAttribsARB в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
 opengl32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
-glew32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe : fatal error LNK1120: неразрешенных внешних элементов: 22
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe : fatal error LNK1120: неразрешенных внешних элементов: 9

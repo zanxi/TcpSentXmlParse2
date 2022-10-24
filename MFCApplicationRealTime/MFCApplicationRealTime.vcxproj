@@ -88,7 +88,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -192,12 +192,19 @@
     <ClInclude Include="CMyListCtrl.h" />
     <ClInclude Include="CMyTabCtrl.h" />
     <ClInclude Include="ColoredListCtrl.h" />
+    <ClInclude Include="ctab6opengl.h" />
+    <ClInclude Include="ctab7opengl.h" />
     <ClInclude Include="CTabTwo.h" />
     <ClInclude Include="DataStruct.h" />
     <ClInclude Include="Dynamic3d.h" />
+    <ClInclude Include="eglew.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="glew.h" />
+    <ClInclude Include="glxew.h" />
     <ClInclude Include="MFCApplicationRealTime.h" />
     <ClInclude Include="MFCApplicationRealTimeDlg.h" />
+    <ClInclude Include="OpenGLRenderer.h" />
+    <ClInclude Include="OpenGL_MFCDialogDlg.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SerialPort.h" />
@@ -209,6 +216,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TColorText.h" />
+    <ClInclude Include="wglew.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppServiceDlg.cpp" />
@@ -217,10 +225,14 @@
     <ClCompile Include="CMyListCtrl.cpp" />
     <ClCompile Include="CMyTabCtrl.cpp" />
     <ClCompile Include="ColoredListCtrl.cpp" />
+    <ClCompile Include="ctab6opengl.cpp" />
+    <ClCompile Include="ctab7opengl.cpp" />
     <ClCompile Include="CTabTwo.cpp" />
     <ClCompile Include="Dynamic3d.cpp" />
     <ClCompile Include="MFCApplicationRealTime.cpp" />
     <ClCompile Include="MFCApplicationRealTimeDlg.cpp" />
+    <ClCompile Include="OpenGLRenderer.cpp" />
+    <ClCompile Include="OpenGL_MFCDialogDlg.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

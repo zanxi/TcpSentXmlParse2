@@ -1,60 +1,26 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (OpenGL_MFCDialog.vcxproj).  Это может привести к ошибкам очистки и перестроения.
-  OpenGL_MFCDialogDlg.cpp
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.h(13,1): error C2504: CDialogEx: не определен базовый класс
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(19,4): error C2614: COpenGL_MFCDialogDlg: недопустимая инициализация члена: "CDialogEx" не является базовым классом или членом
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(27,31): error C2248: CWnd::DoDataExchange: невозможно обратиться к protected член, объявленному в классе "CWnd"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2919): message : см. объявление "CWnd::DoDataExchange"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2181): message : см. объявление "CWnd"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(27,13): error C2352: CWnd::DoDataExchange: недопустимый вызов нестатической функции-члена
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2919): message : см. объявление "CWnd::DoDataExchange"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(33,2): error C2440: static_cast: невозможно преобразовать "void (__cdecl COpenGL_MFCDialogDlg::* )(UINT,LPARAM)" в "void (__cdecl CWnd::* )(UINT,LPARAM)"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(33,2): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(34,2): error C2440: static_cast: невозможно преобразовать "void (__cdecl COpenGL_MFCDialogDlg::* )(void)" в "void (__cdecl CWnd::* )(void)"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(34,2): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(35,2): error C2440: static_cast: невозможно преобразовать "HCURSOR (__cdecl COpenGL_MFCDialogDlg::* )(void)" в "HCURSOR (__cdecl CWnd::* )(void)"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(35,2): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(36,2): error C2440: static_cast: невозможно преобразовать "void (__cdecl COpenGL_MFCDialogDlg::* )(UINT,int,int)" в "void (__cdecl CWnd::* )(UINT,int,int)"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(36,2): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(37,1): error C2248: CDialogEx::GetThisMessageMap: невозможно обратиться к protected член, объявленному в классе "CDialogEx"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxdialogex.h(86): message : см. объявление "CDialogEx::GetThisMessageMap"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxdialogex.h(27): message : см. объявление "CDialogEx"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(44,13): error C2352: CDialog::OnInitDialog: недопустимый вызов нестатической функции-члена
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(3369): message : см. объявление "CDialog::OnInitDialog"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(56,38): error C2248: CWnd::OnSysCommand: невозможно обратиться к protected член, объявленному в классе "CWnd"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2799): message : см. объявление "CWnd::OnSysCommand"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2181): message : см. объявление "CWnd"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(56,14): error C2352: CWnd::OnSysCommand: недопустимый вызов нестатической функции-члена
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2799): message : см. объявление "CWnd::OnSysCommand"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(66,5): error C2660: IsIconic: функция не принимает 0 аргументов
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winuser.h(4837,1): message : см. объявление "IsIconic"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(68,19): error C2664: "CPaintDC::CPaintDC(CWnd *)": невозможно преобразовать аргумент 1 из "COpenGL_MFCDialogDlg *" в "CWnd *"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(68,15): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(996,2): message : см. объявление "CPaintDC::CPaintDC"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(70,78): error C2660: SendMessageW: функция не принимает 3 аргументов
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winuser.h(3699,1): message : см. объявление "SendMessageW"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(76,22): error C2660: GetClientRect: функция не принимает 1 аргументов
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winuser.h(8966,1): message : см. объявление "GetClientRect"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(85,22): error C2248: CDialog::OnPaint: невозможно обратиться к protected член, объявленному в классе "CDialog"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(3418): message : см. объявление "CDialog::OnPaint"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(3323): message : см. объявление "CDialog"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(85,14): error C2352: CDialog::OnPaint: недопустимый вызов нестатической функции-члена
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(3418): message : см. объявление "CDialog::OnPaint"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(99,31): error C2248: CWnd::OnSize: невозможно обратиться к protected член, объявленному в классе "CWnd"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2762): message : см. объявление "CWnd::OnSize"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2181): message : см. объявление "CWnd"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(99,11): error C2352: CWnd::OnSize: недопустимый вызов нестатической функции-члена
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\atlmfc\include\afxwin.h(2762): message : см. объявление "CWnd::OnSize"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(142,25): error C2660: ScreenToClient: функция не принимает 1 аргументов
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winuser.h(9441,1): message : см. объявление "ScreenToClient"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(151,26): error C2660: ScreenToClient: функция не принимает 1 аргументов
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winuser.h(9441,1): message : см. объявление "ScreenToClient"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(163,51): error C2664: "bool OpenGLRenderer::CreateGLContext(CRect,CWnd *)": невозможно преобразовать аргумент 2 из "COpenGL_MFCDialogDlg *" в "CWnd *"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(163,47): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGLRenderer.h(17,7): message : см. объявление "OpenGLRenderer::CreateGLContext"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(169,53): error C2664: "bool OpenGLRenderer::CreateGLContext(CRect,CWnd *)": невозможно преобразовать аргумент 2 из "COpenGL_MFCDialogDlg *" в "CWnd *"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGL_MFCDialogDlg.cpp(169,49): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\OpenGLRenderer.h(17,7): message : см. объявление "OpenGLRenderer::CreateGLContext"
-  ServerSocketDlg.cpp
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\ServerSocketDlg.cpp(33,7): warning C4101: bytesRecv: неиспользованная локальная переменная
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\MFCApplicationRealTime\ServerSocketDlg.cpp(349,33): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
-  Создание кода...
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_wglCreateContext в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_wglDeleteContext в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_wglMakeCurrent в функции "public: void __cdecl OpenGLRenderer::OnSize(unsigned int,int,int)" (?OnSize@OpenGLRenderer@@QEAAXIHH@Z).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glClear в функции "public: void __cdecl OpenGLRenderer::DrawScene(void)" (?DrawScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glClearColor в функции "public: void __cdecl OpenGLRenderer::PrepareScene(void)" (?PrepareScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glDrawArrays в функции "public: void __cdecl OpenGLRenderer::DrawScene(void)" (?DrawScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glFlush в функции "public: void __cdecl OpenGLRenderer::DrawScene(void)" (?DrawScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glGetString в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glViewport в функции "public: void __cdecl OpenGLRenderer::OnSize(unsigned int,int,int)" (?OnSize@OpenGLRenderer@@QEAAXIHH@Z).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glewInit в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_wglewIsSupported в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewBindBuffer в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewBufferData в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewDeleteBuffers в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewGenBuffers в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewEnableVertexAttribArray в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewVertexAttribPointer в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewBindVertexArray в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewDeleteVertexArrays в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glewGenVertexArrays в функции "public: void __cdecl OpenGLRenderer::SetSquare(void)" (?SetSquare@OpenGLRenderer@@QEAAXXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glewExperimental в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
+OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___wglewCreateContextAttribsARB в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
+opengl32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+glew32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe : fatal error LNK1120: неразрешенных внешних элементов: 22

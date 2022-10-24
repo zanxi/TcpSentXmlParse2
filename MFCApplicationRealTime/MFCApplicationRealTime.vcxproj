@@ -97,8 +97,9 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(OPENCV_DIR)\x64\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_world460.lib;opencv_world460d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v7.0A\Include\glew\lib;$(OPENCV_DIR)\x64\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;opencv_world460.lib;opencv_world460d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -192,15 +193,11 @@
     <ClInclude Include="CMyListCtrl.h" />
     <ClInclude Include="CMyTabCtrl.h" />
     <ClInclude Include="ColoredListCtrl.h" />
-    <ClInclude Include="ctab6opengl.h" />
-    <ClInclude Include="ctab7opengl.h" />
     <ClInclude Include="CTabTwo.h" />
     <ClInclude Include="DataStruct.h" />
     <ClInclude Include="Dynamic3d.h" />
-    <ClInclude Include="eglew.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="glew.h" />
-    <ClInclude Include="glxew.h" />
     <ClInclude Include="MFCApplicationRealTime.h" />
     <ClInclude Include="MFCApplicationRealTimeDlg.h" />
     <ClInclude Include="OpenGLRenderer.h" />
@@ -225,8 +222,6 @@
     <ClCompile Include="CMyListCtrl.cpp" />
     <ClCompile Include="CMyTabCtrl.cpp" />
     <ClCompile Include="ColoredListCtrl.cpp" />
-    <ClCompile Include="ctab6opengl.cpp" />
-    <ClCompile Include="ctab7opengl.cpp" />
     <ClCompile Include="CTabTwo.cpp" />
     <ClCompile Include="Dynamic3d.cpp" />
     <ClCompile Include="MFCApplicationRealTime.cpp" />

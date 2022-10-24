@@ -107,6 +107,7 @@ BOOL CMFCApplicationRealTimeDlg::OnInitDialog()
 	m_tabMyTabCtrl.InsertItem(2, _T("Server Tcp/Udp"));
 	m_tabMyTabCtrl.InsertItem(3, _T("Client Tcp/Udp"));
 	m_tabMyTabCtrl.InsertItem(4, _T("HyperCube Dynamic 3d"));
+	m_tabMyTabCtrl.InsertItem(5, _T("OpenGL dynamic"));
 
 	
 

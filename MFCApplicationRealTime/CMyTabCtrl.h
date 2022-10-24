@@ -8,10 +8,12 @@ class CMyTabCtrl : public CTabCtrl
 	DECLARE_DYNAMIC(CMyTabCtrl)
 
 public:
+
+	static const int numTabs = 6;
 	CMyTabCtrl();
 	virtual ~CMyTabCtrl();
 
-	CDialog* m_tabPages[5];
+	CDialog* m_tabPages[numTabs];
 	int m_tabCurrent;
 	int m_nNumberOfPages;
 

@@ -30,7 +30,7 @@ public:
 
 	UINT_PTR m_unpTimer;
 
-protected:
+public:
 	void SetTriangle();
 	void SetSquare();
 	bool InitContext();					 // Creates OpenGL Rendering Context

@@ -1,7 +1,7 @@
 
 // OpenGL_MFCDialogDlg.cpp : implementation file
 //
-
+#include "pch.h"
 #include "stdafx.h"
 //#include "OpenGL_MFCDialog.h"
 #include "OpenGL_MFCDialogDlg.h"

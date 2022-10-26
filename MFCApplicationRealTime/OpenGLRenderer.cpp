@@ -9,6 +9,8 @@
 
 // OpenGLRenderer
 
+// edit gl
+
 OpenGLRenderer::OpenGLRenderer()
 {
 	m_iWidth = 200;
@@ -69,8 +71,9 @@ bool OpenGLRenderer::InitContext()
         BOOL bResult = SetPixelFormat (m_hdc, nPixelFormat, &pfd);
         if (!bResult) return false; 
  
-        HGLRC tempContext = wglCreateContext(m_hdc);
-		wglMakeCurrent( m_hdc, tempContext);
+		return false;
+		HGLRC tempContext = NULL;// wglCreateContext(m_hdc); // edit gl
+		//wglMakeCurrent( m_hdc, tempContext);
  	
 		GLenum GlewInitResult;
 		glewExperimental = GL_TRUE;
@@ -91,10 +94,11 @@ bool OpenGLRenderer::InitContext()
  
         if(wglewIsSupported("WGL_ARB_create_context") == 1)
         {
-                m_hrc = wglCreateContextAttribsARB(m_hdc,0, attribs);
+			// edit gl
+                /*m_hrc = wglCreateContextAttribsARB(m_hdc,0, attribs);
                 wglMakeCurrent(NULL,NULL);
                 wglDeleteContext(tempContext);
-                wglMakeCurrent(m_hdc, m_hrc);
+                wglMakeCurrent(m_hdc, m_hrc);*/
         }
         else
         {       //It's not possible to make a GL 3.x context. Use the old style context (GL 2.1 and before)
@@ -104,20 +108,21 @@ bool OpenGLRenderer::InitContext()
         if (!m_hrc)
 			return false;
 
-		CString str;
-		str.Format(_T("OpenGL version: %s\n"),(CString)glGetString(GL_VERSION));
-		TRACE(str);
+		//CString str; // edit gl
+		//str.Format(_T("OpenGL version: %s\n"),(CString)glGetString(GL_VERSION));
+		//TRACE(str);
 		return true;
 }
 
 void OpenGLRenderer::PrepareScene()
 {
-	wglMakeCurrent(m_hdc, m_hrc);
-	glClearColor(0.0, 0.0, 1.0, 0.0); //background to clear with.
+	// edit gl
+	//wglMakeCurrent(m_hdc, m_hrc);
+	//glClearColor(0.0, 0.0, 1.0, 0.0); //background to clear with.
 
 	//do other preparations here
 
-	wglMakeCurrent(NULL, NULL);
+	//wglMakeCurrent(NULL, NULL);
 }
 
 void OpenGLRenderer::Reshape(UINT nType, int w, int h)
@@ -130,9 +135,9 @@ void OpenGLRenderer::OnSize(UINT nType, int cx, int cy)
 {
 	if(m_hdc != NULL)
 	{
-		wglMakeCurrent(m_hdc, m_hrc);
+		//wglMakeCurrent(m_hdc, m_hrc); // edit gl
 		//---------------------------------
-		glViewport(0, 0, (GLsizei)cx, (GLsizei)cy); 
+		//glViewport(0, 0, (GLsizei)cx, (GLsizei)cy); 
 		//---------------------------------
 
 		switch (nType)
@@ -147,7 +152,7 @@ void OpenGLRenderer::OnSize(UINT nType, int cx, int cy)
 				break;
 		}
 	}
-	wglMakeCurrent(NULL, NULL);
+	//wglMakeCurrent(NULL, NULL);
 }
 
 
@@ -158,7 +163,7 @@ void OpenGLRenderer::OnTimer(UINT nIDEvent)
 		case 1:
 		{
 			// Clear color and depth buffer bits
-			glClear(GL_COLOR_BUFFER_BIT );
+			//glClear(GL_COLOR_BUFFER_BIT );
 
 			// Draw OpenGL scene
 			DrawScene();
@@ -176,21 +181,22 @@ void OpenGLRenderer::OnTimer(UINT nIDEvent)
 void OpenGLRenderer::DrawScene()
 {
  	//////---------------------------------
-	wglMakeCurrent(NULL, NULL);
+	// edit gl
+	//wglMakeCurrent(NULL, NULL);
 
-	wglMakeCurrent(m_hdc, m_hrc);
+	//wglMakeCurrent(m_hdc, m_hrc);
 	//--------------------------------
-	glClear(GL_COLOR_BUFFER_BIT);
+	//glClear(GL_COLOR_BUFFER_BIT);
 	
 	for(int i=0;i<2;i++)
 	{
 		glBindVertexArray(m_vaoID[i]); 
-		glDrawArrays(GL_LINE_LOOP, 0, m_GLSizeCount);
+		//glDrawArrays(GL_LINE_LOOP, 0, m_GLSizeCount);
 	}
 	//--------------------------------
-	glFlush();
+	//glFlush(); // edit gl
 	SwapBuffers(m_hdc);
-	wglMakeCurrent(NULL, NULL);
+	//wglMakeCurrent(NULL, NULL); // edit gl
 }
 
 
@@ -221,8 +227,8 @@ void OpenGLRenderer::SetData(int iType)
 
 void OpenGLRenderer::SetSquare()
 {
-	wglMakeCurrent(m_hdc, m_hrc);
-
+	//wglMakeCurrent(m_hdc, m_hrc); // edit gl
+	return;
 		// First simple object
 		m_GLSizeCount = 4;
 		m_GLIntSize = 4;
@@ -245,7 +251,7 @@ void OpenGLRenderer::SetSquare()
 		glVertexAttribPointer((GLuint)0, m_GLIntSize, GL_FLOAT, GL_FALSE, 0, 0); 
 		glEnableVertexAttribArray(0);
 	
-	wglMakeCurrent(NULL, NULL);
+	// wglMakeCurrent(NULL, NULL); // edit gl
 }
 
 
@@ -253,8 +259,8 @@ void OpenGLRenderer::SetSquare()
 
 void OpenGLRenderer::SetTriangle()
 {
-	wglMakeCurrent(m_hdc, m_hrc);
-
+	//wglMakeCurrent(m_hdc, m_hrc); // edit gl
+	return;
 		m_GLIntSize = 4; //number of floats per item. i.e. number of floats per point in space.
 		m_GLSizeCount = 3; //number of items. ie sizeof(TriangleA)/m_GLIntSize
 
@@ -291,7 +297,7 @@ void OpenGLRenderer::SetTriangle()
 		glVertexAttribPointer((GLuint)0, m_GLIntSize, GL_FLOAT, GL_FALSE, 0, 0); 
 		glEnableVertexAttribArray(0);
 
-	wglMakeCurrent(NULL, NULL);
+	//wglMakeCurrent(NULL, NULL); // edit gl
 }
 
 
@@ -306,10 +312,11 @@ void OpenGLRenderer::DestroyScene()
     glBindVertexArray(0);
     glDeleteVertexArrays(2, m_vaoID);
 
-	wglMakeCurrent(NULL, NULL);
+	// wglMakeCurrent(NULL, NULL); // edit gl
 	if(m_hrc)
 	{
-		wglDeleteContext(m_hrc);
+		// edit gl
+		//wglDeleteContext(m_hrc);
 		m_hrc = NULL;
 	}
 }

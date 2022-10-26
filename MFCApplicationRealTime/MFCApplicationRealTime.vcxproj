@@ -97,8 +97,8 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v7.0A\Include\glew\lib;$(OPENCV_DIR)\x64\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;opencv_world460.lib;opencv_world460d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Windows\SysWOW64;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x64;C:\Program Files\Microsoft SDKs\Windows\v7.0A\Include\glew\lib;$(OPENCV_DIR)\x64\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glew32s.lib;opencv_world460.lib;opencv_world460d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Midl>

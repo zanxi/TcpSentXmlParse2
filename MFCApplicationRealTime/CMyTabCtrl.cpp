@@ -66,7 +66,7 @@ void CMyTabCtrl::Init(CRect MainRect)
     m_tabPages[4]->Create(IDD_TAB_FIVE__2d, this);
     m_tabPages[5]->Create(IDD_TAB_6_opengl, this);
 
-    m_tabPages[0]->ShowWindow(SW_SHOW);
+    m_tabPages[0]->ShowWindow(SW_SHOW);    
     m_tabPages[1]->ShowWindow(SW_HIDE);
     m_tabPages[2]->ShowWindow(SW_HIDE);
     m_tabPages[3]->ShowWindow(SW_HIDE);

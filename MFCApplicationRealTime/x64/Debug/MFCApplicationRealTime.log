@@ -1,12 +1,3 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (OpenGL_MFCDialog.vcxproj).  Это может привести к ошибкам очистки и перестроения.
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_wglCreateContext в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_wglDeleteContext в функции "public: void __cdecl OpenGLRenderer::DestroyScene(void)" (?DestroyScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_wglMakeCurrent в функции "public: void __cdecl OpenGLRenderer::OnSize(unsigned int,int,int)" (?OnSize@OpenGLRenderer@@QEAAXIHH@Z).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glClear в функции "public: void __cdecl OpenGLRenderer::DrawScene(void)" (?DrawScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glClearColor в функции "public: void __cdecl OpenGLRenderer::PrepareScene(void)" (?PrepareScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glDrawArrays в функции "public: void __cdecl OpenGLRenderer::DrawScene(void)" (?DrawScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glFlush в функции "public: void __cdecl OpenGLRenderer::DrawScene(void)" (?DrawScene@OpenGLRenderer@@QEAAXXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glGetString в функции "public: bool __cdecl OpenGLRenderer::InitContext(void)" (?InitContext@OpenGLRenderer@@QEAA_NXZ).
-OpenGLRenderer.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glViewport в функции "public: void __cdecl OpenGLRenderer::OnSize(unsigned int,int,int)" (?OnSize@OpenGLRenderer@@QEAAXIHH@Z).
-opengl32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
-C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe : fatal error LNK1120: неразрешенных внешних элементов: 9
+  CMyTabCtrl.cpp
+  MFCApplicationRealTime.vcxproj -> C:\_2022___\_Rabota__HH__Source__My\TcpSentXmlParse2\x64\Debug\MFCApplicationRealTime.exe
